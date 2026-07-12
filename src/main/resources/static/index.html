@@ -35,7 +35,7 @@
             const responseDisplay = document.getElementById('responseDisplay');
             responseDisplay.textContent = "Making an API call...";
 
-            fetch('/api/hello')
+            fetch('/api/products')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP error! Status: ${response.status}`);
